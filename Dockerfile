@@ -1,6 +1,5 @@
-ARG ffmpeg_tag=snapshot-vaapi2004
 ARG radarr_tag=latest
-FROM jrottenberg/ffmpeg:${ffmpeg_tag} as ffmpeg
+FROM eikowagenknecht/ffmpeg-vaapi:latest as ffmpeg
 FROM linuxserver/radarr:${radarr_tag}
 LABEL maintainer="eikowagenknecht <eiko.wagenknecht@web.de>"
 
